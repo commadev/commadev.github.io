@@ -1,6 +1,6 @@
 ---
 layout: home
 ---
-# Contact us.
+# About
 
-[bae_alex@naver.com](mailto:bae_alex@naver.com)
+[GitHub](https://github.io/commadev)
