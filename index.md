@@ -3,4 +3,4 @@ layout: home
 ---
 # About
 
-[GitHub](https://github.io/commadev)
+[GitHub](https://github.com/commadev)
