@@ -11,3 +11,12 @@ sitemap: false
 @import "vendor/fonts";
 @import "vendor/font-awesome/font-awesome";
 @import "vendor/magnific-popup/magnific-popup";
+
+.author-thumb {
+    border-radius:100%;
+    width:200px;
+}
+
+.author-info {
+    text-align: center;
+}

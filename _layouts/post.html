@@ -32,9 +32,9 @@ layout: compress
         {% if page.author %}
         {% assign author = site.authors[page.author] %}
         <div>
-          <!--<img class="author-thumb" src="https://avatars1.githubusercontent.com/u/{{ author.gravatar }}?s=400&v=4" alt="{{ author.display_name }}">-->
+          <img class="author-thumb" src="https://avatars1.githubusercontent.com/u/{{ author.gravatar }}?s=400&v=4" alt="{{ author.name }}">
           <div>
-            <p><a href="{{ author.github }}">{{ author.name }}</a> / <a href="mailto:{{ author.email }}" >{{ author.email }}</a></p>
+            <p class="author-info">Author : <a href="{{ author.github }}">{{ author.name }}</a> / <a href="mailto:{{ author.email }}" >Send Mail</a></p>
           </div>
         </div>
         {% endif %}

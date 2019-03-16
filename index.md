@@ -3,4 +3,4 @@ layout: home
 ---
 # About
 
-[GitHub](https://github.com/commadev)
+열정넘치는 친구들끼리 뭉쳤습니다. [GitHub](https://github.com/commadev)
