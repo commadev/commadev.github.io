@@ -18,7 +18,6 @@ permalink: /posts/
     </div>
 
     <div class="block-right">
-      <a href="/posts" title="posts" class="posts-menu-icon"></a>
       <div class="content">
         <ul class="posts-list">
         {% for post in site.posts %}
