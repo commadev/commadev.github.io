@@ -12,6 +12,8 @@ sitemap: false
 @import "vendor/font-awesome/font-awesome";
 @import "vendor/magnific-popup/magnific-popup";
 
+/* Author */
+
 .author-thumb {
     border-radius:100%;
     width:200px;
@@ -19,4 +21,19 @@ sitemap: false
 
 .author-info {
     text-align: center;
+}
+
+/* Post-Show-List Animation */
+
+@keyframes slide_left {0% {margin-right: -1000px; margin-left: 1000px}100% {margin-right: 0px;}}
+@-moz-keyframes slide_left {0% {margin-right: -1000px; margin-left: 1000px}100% {margin-right: 0px;}}
+@-webkit-keyframes slide_left {0% {margin-right: -1000px; margin-left: 1000px}100% {margin-right: 0px;}}
+@-o-keyframes slide_left {0% {margin-right: -1000px; margin-left: 1000px}100% {margin-right: 0px;}}
+
+.posts-list {
+    animation: slide_left .5s 1;
+    -moz-animation: slide_left .5s 1;
+    -webkit-animation: slide_left .5s 1;
+    -o-animation: slide_left .5s 1;
+    margin-left: 0px;
 }
