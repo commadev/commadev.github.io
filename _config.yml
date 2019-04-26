@@ -21,6 +21,11 @@ authors:
     gravatar: 35596687
     email: im@baejino.com
     github: https://github.com/baealex
+  SIN:
+    name: Sinyu Kim
+    gravatar: 46888413
+    email: imakara38@gmail.com
+    github: https://github.com/Imakara38
 
 # Jekyll
 permalink:          /posts/:title/
