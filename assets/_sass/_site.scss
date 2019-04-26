@@ -392,11 +392,12 @@ canvas {
 .main-info {
   color: $white;
   h1 {
+    font-family: 'Glass Antiqua', cursive;
     font-weight: bold;
-    text-transform: uppercase;
     letter-spacing: 1px;
   }
   h2 {
+    font-family: 'Glass Antiqua', cursive;
     font-size: 21px;
     line-height: 30px;
     margin: 10px 0;
@@ -542,7 +543,7 @@ canvas {
     line-height: 30px;
     margin-top: 20px;
     margin-bottom: 20px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #ccc;
     padding-bottom: 15px;
   }
   h1,
@@ -755,6 +756,7 @@ canvas {
     }
   }
   .inner-post {
+    font-family: 'Noto Serif KR', serif;
     h2 {
       font-size: 20px;
       margin-bottom: 20px;
