@@ -3,12 +3,12 @@
   {% if page.previous %}
   <a href="{{ site.url }}{{ page.previous.url }}" class="pagination_pager" title="{{ page.previous.title | markdownify | strip_html }}">previous</a>
   {% else %}
-  <a href="#" class="pagination_pager disabled">previous</a>
+  <a href="#" class="pagination_pager disabled">&lt; Previous : {{ page.previous.title }}</a>
   {% endif %}
   {% if page.next %}
   <a href="{{ site.url }}{{ page.next.url }}" class="pagination_pager" title="{{ page.next.title | markdownify | strip_html }}">next</a>
   {% else %}
-  <a href="#" class="pagination_pager disabled">next</a>
+  <a href="#" class="pagination_pager disabled">{{ page.next.title }} : Next &gt;</a>
   {% endif %}
 </nav>
 {% endif %}
