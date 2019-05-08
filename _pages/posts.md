@@ -21,6 +21,7 @@ permalink: /posts/
       <div class="content">
         <ul class="posts-list">
         {% for post in site.posts %}
+        {% assign author = site.authors[post.author] %}
           <li>
             <h2>
               <a href="{{ site.url }}{{ post.url }}" class="post-title">
@@ -28,7 +29,7 @@ permalink: /posts/
               </a>
               <span class="date">{{ post.date | date: '%d %b %Y' }}</span>
             </h2>
-            <p>{{ post.excerpt | strip_html | truncatewords:10 }}</p>
+            <p>{{ post.excerpt | strip_html | truncatewords:10 }}{% if post.author %} 작성자 : {{ author.name }}{% endif %}</p>
             <ul class="tags">
             {% for tag in post.tags %}
               <li><a href="{{ site.url }}/tags.html#{{ tag }}">{{ tag }}</a></li>
