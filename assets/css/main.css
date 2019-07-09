@@ -1,0 +1,128 @@
+.head-image {
+	width: 100%;
+	height: 500px;
+	background: url(https://commadev.github.io/assets/images/home.jpg) no-repeat;
+	background-size: cover, cover;
+	background-position: center;
+}
+.mask {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	text-align: center;
+}
+.mask > img {
+	padding-top: 100px;
+}
+.mask > h1 {
+	color: #fff;
+}
+.bg-white {
+	background-color: #fff;
+	border-bottom: 1px solid #ddd;
+}
+.content {
+	margin-top: 50px;
+	font-family: HelveticaNeue-Light, AppleSDGothicNeo-Light, 'Malgun Gothic',
+		'\B9D1\C740 \ACE0\B515', dotum, '\B3CB\C6C0', Helvetica, sans-serif;
+	color: #2b2b2b;
+	letter-spacing: -0.025em;
+	-webkit-font-smoothing: antialiased;
+	font-size: 16px;
+	line-height: 30px;
+}
+.post-list {
+	background-image: url(https://commadev.github.io/assets/images/home.jpg);
+	background-size: cover, cover;
+	background-position: center;
+	text-align: center;
+	height: 250px;
+	border-bottom: 1px solid #ddd;
+}
+.post-mask {
+	width: 100%;
+	height: 100%;
+	padding-top: 100px;
+	background-color: rgba(255, 255, 255, 1);
+}
+.post-mask:hover {
+	background-color: rgba(0, 0, 0, 0.3);
+}
+.post-list > a {
+	text-decoration: none;
+	color: #000;
+}
+.post-list > a:hover {
+	text-decoration: none;
+	color: #fff;
+}
+.post-content {
+	margin-top: 50px;
+	font-family: HelveticaNeue-Light, AppleSDGothicNeo-Light, 'Malgun Gothic',
+		'\B9D1\C740 \ACE0\B515', dotum, '\B3CB\C6C0', Helvetica, sans-serif;
+	color: #2b2b2b;
+	letter-spacing: -0.025em;
+	-webkit-font-smoothing: antialiased;
+	font-size: 16px;
+	line-height: 30px;
+}
+
+.post-content img {
+	max-width: 100%;
+}
+
+.post-author p {
+	margin-left: 10px;
+}
+
+.author-info h5 {
+	font-size: 10px;
+	font-weight: bold;
+	margin-top: 20px;
+	@media only screen and (min-width: 992px) {
+		margin-top: 0px;
+	}
+}
+
+.author-info a {
+	color: #000;
+}
+
+.author-info a:hover {
+	color: #444;
+}
+
+.author-info p {
+	margin-bottom: 0px;
+}
+
+.author-thumb {
+	width: 40px;
+	height: 40px;
+	float: left;
+	margin-right: 25px;
+	border-radius: 100%;
+}
+
+.post-top-meta {
+	padding: 30px 20px 30px 20px;
+	margin-top: 30px;
+	border-top: 1px solid #ddd;
+}
+
+.post-top-meta .author-thumb {
+	width: 120px;
+	height: 120px;
+}
+footer {
+	padding: 20px 0px 20px 0px;
+	margin: 20px 0px 0px 0px;
+	border-top: 1px solid #ddd;
+	text-align: center;
+}
+.pagenator {
+	text-align: center;
+	margin-top: 50px;
+	padding-top: 50px;
+	border-top: 1px solid #ddd;
+}
