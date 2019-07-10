@@ -1,14 +1,13 @@
 {% if page.previous or page.next %}
-<nav class="pagination">
-  {% if page.previous %}
-  <a href="{{ site.url }}{{ page.previous.url }}" class="pagination_pager" title="{{ page.previous.title | markdownify | strip_html }}">&lt; Previous : {{ page.previous.title }}</a>
-  {% else %}
-  <a href="#" class="pagination_pager disabled">&lt; Previous</a>
-  {% endif %}
-  {% if page.next %}
-  <a href="{{ site.url }}{{ page.next.url }}" class="pagination_pager" title="{{ page.next.title | markdownify | strip_html }}">{{ page.next.title }} : Next &gt;</a>
-  {% else %}
-  <a href="#" class="pagination_pager disabled">Next &gt;</a>
-  {% endif %}
-</nav>
+<div class="pagenator">
+	{% if page.previous %}
+	<p>
+		<a href="{{ site.url }}{{ page.previous.url }}" title="{{ page.previous.title | markdownify | strip_html }}">&lt; {{ page.previous.title }}</a>
+	</p>
+	{% else %} {% endif %} {% if page.next %}
+	<p>
+		<a href="{{ site.url }}{{ page.next.url }}" title="{{ page.next.title | markdownify | strip_html }}">{{ page.next.title }} &gt;</a>
+	</p>
+	{% else %} {% endif %}
+</div>
 {% endif %}

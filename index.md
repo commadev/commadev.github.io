@@ -1,8 +1,31 @@
 ---
 layout: home
+title: About
 ---
-# About
+## 동아리 연혁
 
-[Introduce](https://commadev.github.io/posts/%ED%8C%80%EC%86%8C%EA%B0%9C/) / [Rules](https://commadev.github.io/posts/%EC%BD%A4%EB%A7%88-%EA%B7%9C%EC%B9%99-%EA%B0%9C%EC%A0%95%ED%8C%90/) / [Assets](https://commadev.github.io/posts/%EC%9E%90%EB%A3%8C%EC%8B%A4/) / [GitHub](https://github.com/commadev)
+학과 내 팀 프로젝트들에서 적극적이고 많은 기여도를 가졌던 친구들이 모여 2018년 6월 캡스톤 디자인 프로그램에서 같은 팀을 결성하게 되었고, 이후로도 마음이 잘 맞아 소동아리 형식으로 반년 간 활동하여 왔습니다.
 
-<p>Contact us. <a style="color: #999;" href="mailto:imakara38@gmail.com">imakara38@gmail.com</a></p>
+<br/>
+
+## 동아리 로고
+
+우리는 스스로 규칙을 세워 각자가 맡은 부분에 대해 책임감 있게 수행하기로 다짐했으며 팀원 각자가 소속감을 느끼며 자신이 바라보는 팀의 목적을 뚜렷하게 하기 위해서 디자인 공모전을 통해 팀의 로고를 만들었습니다.
+
+<br/>
+
+## 캐치프라이즈
+
+우리가 추구하는 가치는 인터페이스를 포함한 그 외의 요소들을 최대한으로 절제하고 프로그램 본래의 목적에 초점을 맞추는 것을 목표로 하고 있습니다.
+
+<br/>
+
+## 제작 프로그램
+
+우리는 그동안 Server-Client통합 [FTP](https://github.com/commadev/FTP-JAVA) 프로그램, Windows 기본 프로그램을 대체할 [ImageViewer](https://github.com/commadev/ImageViewer) 등을 만들었습니다. 각 프로그램은 우리팀의 [깃허브](https://github.com/commadev)에 전부 오픈소스로 공개되어 있습니다.
+
+<br/>
+
+## 현재 추진 아이템
+
+우리의 현재 프로젝트는 미래의 기술로 손꼽히는 인공지능에 초점을 맞추어 진행되고 있습니다. 우리는 여러 인공지능 기술에 대해 학습하고 우리가 개발하는 ‘머신러닝을 활용한 물류 자동화 시스템’에 적합한 기술을 창조할 것입니다. 우리의 목표는 변하지 않습니다. 여전히 사용자가 가장 쓰고 싶은 소프트웨어를 만드는 것 입니다.
