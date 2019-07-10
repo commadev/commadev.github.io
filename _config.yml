@@ -6,7 +6,7 @@ logo: logo.png                                       # Site logo
 locale: ko_KR
 
 # img hosting
-jin5img: https://baealex.run.goorm.io/image/comma-work
+jin5img: https://baealex.iptime.org/TeamProject/Comma/MY-WORK/images
 
 # Left Block Images
 background:
@@ -16,11 +16,6 @@ background:
 
 # Authors
 authors:
-  comma:
-    name: Comma, Dev.
-    gravatar: 48583954
-    email: me@commadev.org
-    github: https://github.com/commadev
   jin5:
     name: Jino Bae
     gravatar: 35596687

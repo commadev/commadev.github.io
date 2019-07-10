@@ -1,85 +1,46 @@
+---
+layout: compress
+---
+
 <!DOCTYPE html>
 <html>
 {% include head.html %}
-<style>
-	.container {
-		padding-right: 15px;
-		padding-left: 15px;
-		margin-right: auto;
-		margin-left: auto;
-	}
+<body id="posts" class="inner-post-page">
 
-	@media (min-width: 768px) {
-		.container {
-			width: 750px;
-		}
-	}
+    <div class="block-left">
+      <div class="content">
+        <a href="{{ site.url }}" class="logo"><img src="{{ site.url }}/assets/images/{{ site.logo }}"></a>
+        <div class="post-title-section">
+          <div class="section-line"><a style="color:rgba(255,255,255,0.6)" href="../">Posts</a> <em>/</em></div>
+          <h1 class="section-title">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>
+          <div class="section-line reverse"><em>/</em></div>
+        </div>
+      </div>
+    </div>
 
-	@media (min-width: 992px) {
-		.container {
-			width: 800px;
-		}
-	}
-
-	@media (min-width: 1200px) {
-		.container {
-			width: 800px;
-		}
-	}
-</style>
-
-<body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-white">
-		<div class="container">
-			<a class="navbar-brand" href="/">
-				Comma, Dev.
-			</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item">
-						<a class="nav-link" href="/">About</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="/posts/">Blog</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="/product/">Product</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="/library/">Library</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-	<div class="container">
-		<div class="post-content">
-			<h1 class="post-title">{{ page.title }}</h1>
-			<small>{{ page.date | date: '%d %b %Y' }}</small>
-			{% if page.author %} {% assign author = site.authors[page.author] %}
-			<div class="row post-top-meta">
-				<img class="author-thumb" src="https://avatars1.githubusercontent.com/u/{{ author.gravatar }}?s=400&v=4" alt="{{ author.display_name }}">
-				<div class="author-info">
-					<h5>WRITTEN BY</h5>
-					<h4>
-						<a href="{{ author.github }}">{{ author.name }}</a>
-					</h4>
-					<p>
-						<a href="mailto:{{ author.email }}">{{ author.email }}</a>
-					</p>
-				</div>
-			</div>
-			{%endif%} {{ content }} {% include page-pagination.html %}
-		</div>
-	</div>
-	<footer>Copyright &copy; 2019
-		<a href="https://baejino.com">BaeJino.</a>
-	</footer>
-	<script src="/assets/js/jquery.min.js"></script>
-	<script src="/assets/js/bootstrap.min.js"></script>
+    <div class="block-right">
+      <a href="{{ site.url }}/posts/" title="posts" class="posts-menu-icon"></a>
+      <span class="posts-link">POSTS</span>
+      <div class="inner-post content">
+        <div class="date-highlight">{% if page.date %}{{ page.date | date: '%d %b %Y' }}{% else %}&#x2756;{% endif %}</div>
+        {% if page.author %}
+        {% assign author = site.authors[page.author] %}
+        <div>
+          <img class="author-thumb" src="https://avatars1.githubusercontent.com/u/{{ author.gravatar }}?s=400&v=4" alt="{{ author.name }}">
+          <div>
+            <p class="author-info">Author : <a href="{{ author.github }}">{{ author.name }}</a> / <a href="mailto:{{ author.email }}" >Send Mail</a></p>
+          </div>
+        </div>
+        {% endif %}
+        {{ content }}
+        <br>
+        {% include share.html %}
+        {% include page-pagination.html %}
+        <a href="#post-end" title="posts" class="post-end-link"><i class="fas fa-arrow-down"></i></a>
+        <div id="post-end"></div>
+      </div>
+    </div>
+    {% include scripts.html %}
+    {% include overlay.html %}
 </body>
-
 </html>
