@@ -25,7 +25,7 @@
 .head-image {
 	width: 100%;
 	height: 500px;
-	background: url({{site.commaimg}}/assets/images/home.jpg) no-repeat;
+	background: url(https://comma.run.goorm.io/assets/images/home.jpg) no-repeat;
 	background-size: cover, cover;
 	background-position: center;
 }
@@ -56,7 +56,7 @@
 	line-height: 30px;
 }
 .post-list {
-	background-image: url({{site.commaimg}}/assets/images/home.jpg);
+	background-image: url(https://comma.run.goorm.io/assets/images/home.jpg);
 	background-size: cover, cover;
 	background-position: center;
 	text-align: center;
