@@ -21,16 +21,6 @@
 	background-color: #fff;
 	border-bottom: 1px solid #ddd;
 }
-.content {
-	margin-top: 50px;
-	font-family: HelveticaNeue-Light, AppleSDGothicNeo-Light, 'Malgun Gothic',
-		'\B9D1\C740 \ACE0\B515', dotum, '\B3CB\C6C0', Helvetica, sans-serif;
-	color: #2b2b2b;
-	letter-spacing: -0.025em;
-	-webkit-font-smoothing: antialiased;
-	font-size: 16px;
-	line-height: 30px;
-}
 .post-list {
 	background-image: url(https://comma.run.goorm.io/assets/images/home.jpg);
 	background-size: cover, cover;

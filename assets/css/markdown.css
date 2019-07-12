@@ -46,13 +46,17 @@
   }
   
   .markdown-body {
+    margin-top: 50px;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
-    color: #24292e;
-    line-height: 1.5;
-    font-size: 16px;
-    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
     word-wrap: break-word;
+	font-family: HelveticaNeue-Light, AppleSDGothicNeo-Light, 'Malgun Gothic',
+		'\B9D1\C740 \ACE0\B515', dotum, '\B3CB\C6C0', Helvetica, sans-serif;
+	color: #2b2b2b;
+	letter-spacing: -0.025em;
+	font-size: 16px;
+	line-height: 30px;
   }
   
   .markdown-body .pl-c {
