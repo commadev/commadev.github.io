@@ -12,22 +12,29 @@
   {% else %}
   <meta name="description" content="{{ site.description }}">
   {% endif %}
-  {% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ', ' }}">{% endif %}
+  {% if page.tags %}
+  <meta name="keywords" content="{{ page.tags | join: ', ' }}">{% endif %}
   <!-- Twitter Cards -->
   {% if page.image %}{% capture image %}{{ page.image }}{% endcapture %}{% unless image contains 'http://' or image contains 'https://' %}{% capture image %}{{ site.url }}/{{ image }}{% endcapture %}{% endunless %}
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="{{ image }}">
-  {% else %}<meta name="twitter:card" content="summary">
+  {% else %}
+  <meta name="twitter:card" content="summary">
   <meta name="twitter:image" content="{{ site.logo }}">{% endif %}
   <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-  {% if page.excerpt %}<meta name="twitter:description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
-  {% if site.twitter %}<meta name="twitter:site" content="@{{ site.twitter }}">
+  {% if page.excerpt %}
+  <meta name="twitter:description"
+    content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+  {% if site.twitter %}
+  <meta name="twitter:site" content="@{{ site.twitter }}">
   <meta name="twitter:creator" content="@{{ site.twitter }}">{% endif %}
   <!-- Open Graph -->
   <meta property="og:locale" content="{{ site.locale }}">
   <meta property="og:type" content="article">
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-  {% if page.excerpt %}<meta property="og:description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+  {% if page.excerpt %}
+  <meta property="og:description"
+    content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
   <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
   <meta property="og:site_name" content="{{ site.title }}">
   <meta property="og:image" content="{{ site.url }}/images/{{ site.logo }}">
@@ -50,16 +57,29 @@
   {% capture image %}{{ page.image }}{% endcapture %}
   {% unless image contains 'http://' or image contains 'https://' %}{% capture image %}{{ site.url }}/{{ image }}{% endcapture %}{% endunless %}
   <style type="text/css">
-    #posts.inner-post-page .block-left {background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ image }}) no-repeat;background-size: cover;}
-  </style>
-  {% else %}
-  <style type="text/css">
-    #posts.inner-post-page .block-left {background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ site.url }}/{{ site.background.default-post }}) no-repeat;background-size: cover;}
-  </style>
-  {% endif %}
-  <!-- Left Block Images for Home and Pages -->
-  <style type="text/css">
-    #posts .block-left {background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ site.url }}/{{ site.background.post-list }}) no-repeat;background-size: cover, cover;}
-    .block-left {background: linear-gradient(rgba(44,45,51,0.9), rgba(44,45,51,0.9)), url({{ site.url }}/{{ site.background.homepage }}) no-repeat;background-size: cover;}
+    .container {
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    @media (min-width: 768px) {
+      .container {
+        width: 750px;
+      }
+    }
+
+    @media (min-width: 992px) {
+      .container {
+        width: 800px;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      .container {
+        width: 800px;
+      }
+    }
   </style>
 </head>
