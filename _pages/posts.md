@@ -6,12 +6,12 @@ permalink: /posts/
 ---
 <style>
 footer {
-border:none;
+	border:none;
 }
 </style>
 {% for post in site.posts %}
 <!--{% if post.author %} 작성자 : {{ author.name }}{% endif %}-->
-<div class="post-list" {%if post.image %}style="background-image:url({{ post.image }})"{% endif %}>
+<div class="post-list" {%if post.image %}style="background-image:url({{ site.commaimg }}{{ post.image }})"{% endif %}>
 	<a href="{{ site.url }}{{ post.url }}" class="post-title">
 		<div class="post-mask">
 			<h3>
