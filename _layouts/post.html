@@ -45,7 +45,11 @@
 					</p>
 				</div>
 			</div>
-			{%endif%} {{ content }} {% include page-pagination.html %}
+			{%endif%}
+			<div class="markdown-body">
+			{{ content }}
+			</div>
+			{% include page-pagination.html %}
 		</div>
 	</div>
 	<footer>Copyright &copy; 2019
