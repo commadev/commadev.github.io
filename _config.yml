@@ -5,10 +5,6 @@ url: https://commadev.github.io
 logo: logo.png                                       # Site logo
 locale: ko_KR
 
-# img hosting
-commaimg: https://comma.run.goorm.io
-jin5img: https://baealex.run.goorm.io/image/comma-work
-
 # Authors
 authors:
   comma:
