@@ -92,6 +92,9 @@
 	float: left;
 	margin-right: 25px;
 	border-radius: 100%;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .post-top-meta {
@@ -114,6 +117,7 @@ footer {
 	text-align: center;
 	margin-top: 50px;
 	padding-top: 50px;
+	margin-bottom: 50px;
 	border-top: 1px solid #ddd;
 }
 .container {

@@ -34,20 +34,16 @@
 			<small>{{ page.date | date: '%d %b %Y' }}</small>
 			{% if page.author %} {% assign author = site.authors[page.author] %}
 			<div class="row post-top-meta">
-				<img class="author-thumb" src="https://avatars1.githubusercontent.com/u/{{ author.gravatar }}?s=400&v=4" alt="{{ author.display_name }}">
+				<div class="author-thumb" style="background-image:url(https://avatars1.githubusercontent.com/u/{{ author.gravatar }}?s=400&v=4);"></div>
 				<div class="author-info">
 					<h5>WRITTEN BY</h5>
-					<h4>
-						<a href="{{ author.github }}">{{ author.name }}</a>
-					</h4>
-					<p>
-						<a href="mailto:{{ author.email }}">{{ author.email }}</a>
-					</p>
+					<h4><a href="{{ author.github }}">{{ author.name }}</a></h4>
+					<p><a href="mailto:{{ author.email }}">{{ author.email }}</a></p>
 				</div>
 			</div>
 			{%endif%}
 			<div class="markdown-body">
-			{{ content }}
+				{{ content }}
 			</div>
 			{% include page-pagination.html %}
 		</div>
