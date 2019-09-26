@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Comma, Dev.</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" 
+    crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+</head>
+<body>
+    <div class="back-image main-background">
+        <img src="https://commadev.github.io/assets/images/logo.png">
+    </div>
+    <div class="left-top-image-logo">
+        <img src="https://commadev.github.io/assets/images/logo.png">
+    </div>
+    <div class="right-top-text-nav">
+        <ul class="nonstyle inline">
+            <li><a href="javascript:void(0)" onclick="MoveSlide('intro');">Intro</a></li>
+            <li><a href="javascript:void(0)" onclick="MoveSlide('logo');">Logo</a></li>
+            <li><a href="javascript:void(0)" onclick="MoveSlide('product');">Product</a></li>
+            <li><a href="javascript:void(0)" onclick="MoveSlide('contact');">Contact</a></li>
+        </ul>
+    </div>
+    <div class="left-lay-text-logo">
+        Comma, Dev.
+    </div>
+    <div class="right-lay-text-logo">
+        절제되고 목적에 맞는 소프트웨어
+    </div>
+    <div class="left-bottom-social">
+        <ul class="nonstyle">
+            <li><a class="social-link" href="https://blex.kr/@comma"><i class="fas fa-rss"></i></a></li>
+            <li><a class="social-link" href="https://github.com/commadev"><i class="fab fa-github"></i></a></li>
+        </ul>
+    </div>
+    <div class="container main-content text-center">
+        <h2 id="intro">2018.06.</h2>
+        <h4 class="mt-2">
+            프로그래밍이 재밌어서 하는 친구들
+        </h4>
+        <ul class="nonstyle inline mt-2">
+            <li class="team-info"><a href="https://github.com/Imakara38"><img src="https://avatars0.githubusercontent.com/u/46888413?s=180&v=4">김신유</a></li>
+            <li class="team-info"><a href="https://github.com/baealex"><img src="https://avatars1.githubusercontent.com/u/35596687?s=180&v=4">배진오</a></li>
+            <li class="team-info"><a href="https://github.com/DeCrazy"><img src="https://avatars3.githubusercontent.com/u/47843542?s=180&v=4">이산아</a></li>
+        </ul>
+        <ul class="nonstyle mt-2">
+            <li><a href="https://blex.kr/@comma/%EC%BD%A4%EB%A7%88-%EA%B7%9C%EC%B9%99">규칙</a></li>
+            <li><a href="https://blex.kr/@comma/%ED%9A%8C%EC%9D%98%EB%A1%9D">회의록</a></li>
+            <li><a href="https://blex.kr/@comma/%EC%9E%90%EB%A3%8C%EC%8B%A4">자료실</a></li>
+        </ul>
+    </div>
+    <div class="container main-content text-center">
+        <h2 id="logo">LOGO.</h2>
+        <h4 class="mt-2">
+            우리가 생각하는 우리팀은 무엇인가?
+        </h4>
+        <p class="mt-2">소속감을 향상시키기 위해 서로가 생각하는 팀을 CI 공모전을 통해 이야기하였다.</p>
+    </div>
+    <div class="row-image mt-5 text-center">
+        <img src="https://static.blex.kr/image/2019/09/25/2_O1zNGf4gd1oFfdN.png">
+        <img src="https://static.blex.kr/image/2019/09/25/3_A8SjaUW6QxQEUHq.png">
+        <img src="https://static.blex.kr/image/2019/09/25/4_wemU8d987vsLnDZ.png">
+    </div>
+    <div class="container main-content text-center">
+        <h2 id="product">PRODUCT.</h2>
+        <div class="we-product-video mt-1" style="background-image: url(http://baealex.run.goorm.io/api/blog-together/image/uploads/2019/09/26/kQSqO1fk4z.png)" onclick="location.href='https://github.com/commadev/File-Transfer-System'">
+            <h4 class="mt-3">
+                파일 전송 프로그램
+            </h4>
+        </div>
+        <div class="we-product-video mt-1" style="background-image: url(https://baealex.run.goorm.io/api/blog-together/image/uploads/2019/09/26/tBPYcQaPVn.gif)" onclick="location.href='https://github.com/commadev/CommaViewer'">
+            <h4 class="mt-3">
+                이미지 뷰어
+            </h4>
+        </div>
+        <div class="we-product-video mt-1" style="background-image: url(https://baealex.run.goorm.io/api/blog-together/image/uploads/2019/09/26/fm3kJ7zkoj.gif)" onclick="location.href='https://github.com/commadev/AI-Logistics-System-Server'">    
+            <h4 class="mt-3">
+                물류 자동화 시스템 알고리즘
+            </h4>
+        </div>
+    </div>
+    <div class="container main-content text-center">
+        <h2 id="contact">CONTACT.</h2>
+        <h4 class="mt-2">
+            <a class="contact" href="mailto:bae_alex@naver.com">bae_alex@naver.com</a>
+        </h4>
+    </div>
+    <div class="main-content"></div>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
