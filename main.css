@@ -24,7 +24,6 @@ a {
     position: fixed;
     top: 45vh;
     left: 20px;
-    transition: all ease 0.5s 0s;
     -ms-transform: rotate(-90deg);
     -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg);
@@ -34,7 +33,6 @@ a {
     position: fixed;
     top: 45vh;
     right: -50px;
-    transition: all ease 0.5s 0s;
     -ms-transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
@@ -118,6 +116,7 @@ a {
     padding-top: 120px;
     height: 52%;
     width: 100%;
+    cursor: pointer;
 }
 .we-product-video:hover {
     -webkit-transform:scale(1.2);

@@ -14,12 +14,14 @@ $(document).ready(function() {
         } else {
             $('.left-lay-text-logo').css('color','#fff');
         }
-        if ($(document).scrollTop() > winH/1.6) {
+        if ($(document).scrollTop() > winH/1.35) {
             $('.left-top-image-logo').css('opacity','1');
+            $('.right-lay-text-logo').css('display','none');
         } else {
             $('.left-top-image-logo').css('opacity','0');
+            $('.right-lay-text-logo').css('display','initial');
         }
-        if ($(document).scrollTop() > winH) {
+        if ($(document).scrollTop() > winH/1.05) {
             $('.right-top-text-nav a').css('color','#000');
         } else {
             $('.right-top-text-nav a').css('color','#fff');
