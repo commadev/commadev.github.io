@@ -4,6 +4,7 @@
 }
 a {
     color: #000;
+    text-decoration: none;
 }
 .back-image {
     background-repeat: no-repeat;
@@ -116,7 +117,7 @@ a {
     padding-top: 120px;
     height: 52%;
     width: 100%;
-    cursor: pointer;
+    transition: all ease 0.5s 0s;
 }
 .we-product-video:hover {
     -webkit-transform:scale(1.2);
