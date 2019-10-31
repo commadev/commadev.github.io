@@ -145,3 +145,18 @@ a {
 .mt-5 {
     margin-top: 50px;
 }
+
+@media screen and (max-width: 1200px) {
+    .left-lay-text-logo {
+        position: absolute;
+    }
+    .right-lay-text-logo {
+        position: absolute;
+    }
+    .right-top-text-nav {
+        position: absolute;
+    }
+    .left-bottom-social {
+        position: absolute;
+    }
+}
