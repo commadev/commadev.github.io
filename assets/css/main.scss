@@ -1,0 +1,105 @@
+---
+---
+.head-image {
+	width: 100%;
+	height: 500px;
+	background: url(https://comma.run.goorm.io/assets/images/home.jpg) no-repeat;
+	background-size: cover, cover;
+	background-position: center;
+}
+.mask {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	text-align: center;
+}
+.mask > img {
+	padding-top: 100px;
+}
+.mask > h1 {
+	color: #fff;
+}
+.bg-white {
+	background-color: #fff;
+	border-bottom: 1px solid #ddd;
+}
+.post-list {
+	background-image: url(/assets/images/home.jpg);
+	background-size: cover, cover;
+	background-position: center;
+	text-align: center;
+	height: 300px;
+	border-bottom: 1px solid #eee;
+}
+.post-mask {
+	width: 100%;
+	height: 100%;
+	padding-top: 130px;
+	background-color: rgba(255, 255, 255, 1);
+}
+.post-mask:hover {
+	background-color: rgba(0, 0, 0, 0.3);
+}
+.post-list > a {
+	text-decoration: none;
+	color: #000;
+}
+.post-list > a:hover {
+	text-decoration: none;
+	color: #fff;
+}
+.post-content img {
+	max-width: 100%;
+}
+
+.post-author p {
+	margin-left: 10px;
+}
+
+.author-info h5 {
+	font-size: 10px;
+	font-weight: bold;
+	margin-top: 20px;
+	@media only screen and (min-width: 992px) {
+		margin-top: 0px;
+	}
+}
+
+.author-info a {
+	color: #000;
+}
+
+.author-info a:hover {
+	color: #444;
+}
+
+.author-info p {
+	margin-bottom: 0px;
+}
+
+.author-thumb {
+	width: 40px;
+	height: 40px;
+	float: left;
+	margin-right: 25px;
+	border-radius: 100%;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.post-top-meta {
+	padding: 30px 20px 30px 20px;
+	margin-top: 30px;
+	border-top: 1px solid #ddd;
+}
+
+.post-top-meta .author-thumb {
+	width: 120px;
+	height: 120px;
+}
+footer {
+	padding: 20px 0px 20px 0px;
+	border-top: 1px solid #ccc;
+	text-align: center;
+}

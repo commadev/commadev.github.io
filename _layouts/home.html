@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body>
+	{% include topnav.html %}
+	<div class="head-image">
+		<div class="mask">
+			<img src="https://commadev.github.io/assets/images/logo.png">
+			<h1>Comma, Dev.</h1>
+		</div>
+	</div>
+	<div class="container">
+		<div class="markdown-body">
+			{{ content }}
+		</div>
+	</div>
+	{% include footer.html %}
+	<script src="/assets/js/jquery.min.js"></script>
+	<script src="/assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>

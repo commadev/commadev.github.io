@@ -7,37 +7,18 @@
     <title>Comma, Dev.</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" 
     crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
-    <link href="main.css" rel="stylesheet">
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap">
+    <link rel="stylesheet" href="/assets/css/about.css">
+    <link rel="stylesheet" href="https://baejino.com/baealex.css">
+    <link rel="shortcut icon" href="assets/favicon.ico">
+    <link rel="icon" href="/assets/logo.png">
 </head>
 <body>
     <div class="back-image main-background">
-        <img src="logo.png">
-    </div>
-    <div class="left-top-image-logo">
-        <img src="logo.png">
-    </div>
-    <div class="right-top-text-nav">
-        <ul class="nonstyle inline">
-            <li><a href="javascript:void(0)" onclick="MoveSlide('intro');">Intro</a></li>
-            <li><a href="javascript:void(0)" onclick="MoveSlide('logo');">Logo</a></li>
-            <li><a href="javascript:void(0)" onclick="MoveSlide('product');">Product</a></li>
-            <li><a href="javascript:void(0)" onclick="MoveSlide('contact');">Contact</a></li>
-        </ul>
-    </div>
-    <div class="left-lay-text-logo">
-        Comma, Dev.
+        <img src="/assets/logo.png">
     </div>
     <div class="right-lay-text-logo">
         절제되고 목적에 맞는 소프트웨어
-    </div>
-    <div class="left-bottom-social">
-        <ul class="nonstyle">
-            <li><a class="social-link" href="https://blex.kr/@comma"><i class="fas fa-rss"></i></a></li>
-            <li><a class="social-link" href="https://github.com/commadev"><i class="fab fa-github"></i></a></li>
-        </ul>
     </div>
     <div class="container main-content text-center">
         <h2 id="intro">2018.06.</h2>
@@ -50,9 +31,9 @@
             <li class="team-info"><a href="https://github.com/DeCrazy"><img src="https://avatars3.githubusercontent.com/u/47843542?s=180&v=4">이산아</a></li>
         </ul>
         <ul class="nonstyle mt-2">
-            <li><a href="https://blex.kr/@comma/%EA%B7%9C%EC%B9%99">규칙</a></li>
-            <li><a href="https://blex.kr/@comma/%ED%9A%8C%EC%9D%98%EB%A1%9D">회의록</a></li>
-            <li><a href="https://blex.kr/@comma/%EC%9E%90%EB%A3%8C%EC%8B%A4">자료실</a></li>
+            <li><a href="/posts/콤마-규칙/">규칙</a></li>
+            <li><a href="/posts/1차-작업물-회의/">회의록</a></li>
+            <li><a href="/library/">자료실</a></li>
         </ul>
     </div>
     <div class="container main-content text-center">
@@ -63,42 +44,67 @@
         <p class="mt-2">소속감을 향상시키기 위해 서로가 생각하는 팀을 CI 공모전을 통해 이야기하였다.</p>
     </div>
     <div class="row-image mt-5 text-center">
-        <img src="https://baealex.run.goorm.io/api/blog-together/image/uploads/2019/09/26/8blyICgjzy.png">
-        <img src="https://baealex.run.goorm.io/api/blog-together/image/uploads/2019/09/26/tTdQZATGTt.png">
-        <img src="https://baealex.run.goorm.io/api/blog-together/image/uploads/2019/09/26/DYBEyKWzZf.png">
+        <img src="/assets/images/1-design-ci/1.png">
+        <img src="/assets/images/1-design-ci/2.png">
+        <img src="/assets/images/1-design-ci/3.png">
     </div>
     <div class="container main-content text-center">
-        <h2 id="product">PRODUCT.</h2>
-        <a href="https://github.com/commadev/File-Transfer-System">
-            <div class="we-product-video mt-1" style="background-image: url(http://baealex.run.goorm.io/api/blog-together/image/uploads/2019/09/26/kQSqO1fk4z.png)">
-                <h4 class="mt-3">
+        <h2 id="product" class="mb-3">PRODUCT.</h2>
+    </div>
+    <a href="https://github.com/commadev/File-Transfer-System">
+        <div class="fill-full-display fill-image" style="background-image: url(https://baealex.run.goorm.io/api/blog-together/image/uploads/2019/09/26/kQSqO1fk4z.png)">
+            <div class="image-mask-dark">
+                <h2>
                     파일 전송 프로그램(FTP)
-                </h4>
+                </h2>
             </div>
-        </a>
-        <a href="https://github.com/commadev/CommaViewe">
-            <div class="we-product-video mt-1" style="background-image: url(https://baealex.run.goorm.io/api/blog-together/image/uploads/2019/09/26/tBPYcQaPVn.gif)">
-                <h4 class="mt-3">
-                    이미지 뷰어
-                </h4>
-            </div>  
-        </a>
-        <a href="https://github.com/commadev/AI-Logistics-System-Server">
-            <div class="we-product-video mt-1" style="background-image: url(https://baealex.run.goorm.io/api/blog-together/image/uploads/2019/09/26/fm3kJ7zkoj.gif)">    
-                <h4 class="mt-3">
+        </div>
+    </a>
+    <a href="https://github.com/commadev/CommaViewer">
+        <div class="fill-full-display fill-image" style="background-image: url(https://baealex.run.goorm.io/api/blog-together/image/uploads/2019/09/26/tBPYcQaPVn.gif)">
+            <div class="image-mask-dark">
+                <h2>
+                    Comma Viewer
+                </h2>
+            </div>
+        </div>  
+    </a>
+    <a href="https://github.com/commadev/AI-Logistics-System-Server">
+        <div class="fill-full-display fill-image" style="background-image: url(https://baealex.run.goorm.io/api/blog-together/image/uploads/2019/09/26/fm3kJ7zkoj.gif)">
+            <div class="image-mask-dark">
+                <h2>
                     물류 자동화 시스템 알고리즘
-                </h4>
+                </h2>
             </div>
-        </a>
-    </div>
-    <div class="container main-content text-center">
+        </div>
+    </a>
+    <div class="container main-content text-center mb-5">
         <h2 id="contact">CONTACT.</h2>
         <h4 class="mt-2">
             <a class="contact" href="mailto:bae_alex@naver.com">baealex@outlook.kr</a>
         </h4>
     </div>
-    <div class="main-content"></div>
+    <div class="left-top-image-logo">
+        <img src="/assets/logo.png">
+    </div>
+    <div class="right-top-text-nav">
+        <ul class="nonstyle inline">
+            <li><a href="javascript:void(0)" onclick="MoveSlide('intro');">Intro</a></li>
+            <li><a href="javascript:void(0)" onclick="MoveSlide('logo');">Logo</a></li>
+            <li><a href="javascript:void(0)" onclick="MoveSlide('product');">Product</a></li>
+            <li><a href="javascript:void(0)" onclick="MoveSlide('contact');">Contact</a></li>
+        </ul>
+    </div>
+    <div class="left-lay-text-logo">
+        Comma, Dev.
+    </div>
+    <div class="left-bottom-social">
+        <ul class="nonstyle">
+            <li><a class="social-link" href="/posts/"><i class="fas fa-rss"></i></a></li>
+            <li><a class="social-link" href="https://github.com/commadev"><i class="fab fa-github"></i></a></li>
+        </ul>
+    </div>
     <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
-    <script src="main.js"></script>
+    <script src="/assets/js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,14 @@
+{% if page.previous or page.next %}
+<div class="row mt-5 mb-5">
+	<div class="col-sm-6 text-left">
+		{% if page.previous %}
+		<a href="{{ site.url }}{{ page.previous.url }}" title="{{ page.previous.title | markdownify | strip_html }}">이전 : {{ page.previous.title }}</a>
+		{% endif %}
+	</div>
+	<div class="col-sm-6 text-right">
+		{% if page.next %}
+		<a href="{{ site.url }}{{ page.next.url }}" title="{{ page.next.title | markdownify | strip_html }}">다음 : {{ page.next.title }}</a>
+		{% endif %}
+	</div>
+</div>
+{% endif %}

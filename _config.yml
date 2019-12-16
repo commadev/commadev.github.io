@@ -1,0 +1,51 @@
+# Site
+title: Comma, Dev.
+description: Official Team Blog
+url: https://baealex-about.run.goorm.io
+logo: logo.png                                       # Site logo
+locale: ko_KR
+
+# Authors
+authors:
+  comma:
+    name: Comma, Dev.
+    gravatar: 48583954
+    email: me@commadev.org
+    github: https://github.com/commadev
+  JIN:
+    name: Jino Bae
+    gravatar: 35596687
+    email: im@baejino.com
+    github: https://github.com/baealex
+  SIN:
+    name: Sinyu Kim
+    gravatar: 46888413
+    email: imakara38@gmail.com
+    github: https://github.com/Imakara38
+
+# Jekyll
+permalink:          /posts/:title/
+markdown:           kramdown
+highlighter:        rouge
+kramdown:
+  auto_ids:         true
+  footnote_nr:      1
+  entity_output:    as_char
+  toc_levels:       1..6
+  enable_coderay:   false
+sass:
+  sass_dir:         assets/_sass
+  style:            compressed
+
+# Google Analytics
+#google-analytics: UA-XXXXX-Y
+
+# Gems
+gems:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-gist
+
+# Exclude list
+include: [_pages]
+exclude: [README.md, Gemfile, Gemfile.lock, _site, src, vendor, CNAME, LICENSE, Rakefile, .sass-cache, .DS_Store]
