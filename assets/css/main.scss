@@ -1,53 +1,103 @@
 ---
 ---
+@font-face {
+    font-family: 'Spoqa Han Sans Neo';
+    font-weight: 700;
+    src: local('Spoqa Han Sans Bold'),
+    url('/assets/fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Bold.woff2') format('woff2'),
+    url('/assets/fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Bold.woff') format('woff'),
+    url('/assets/fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Spoqa Han Sans Neo';
+    font-weight: 400;
+    src: local('Spoqa Han Sans Regular'),
+    url('/assets/fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Regular.woff2') format('woff2'),
+    url('/assets/fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Regular.woff') format('woff'),
+    url('/assets/fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Regular.ttf') format('truetype');
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Spoqa Han Sans Neo', sans-serif;
+}
+
+a {
+    color: #868686;
+    text-decoration: none;
+
+	&:hover {
+		color: #868686;
+		text-decoration: none;
+	}
+}
+
 .head-image {
 	width: 100%;
 	height: 500px;
-	background: url(https://comma.run.goorm.io/assets/images/home.jpg) no-repeat;
+	background: url(/assets/images/home.jpg) no-repeat;
 	background-size: cover, cover;
 	background-position: center;
 }
+
 .mask {
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0, 0, 0, 0.5);
 	text-align: center;
+	background-color: rgba(0, 0, 0, 0.5);
+
+	& > h1 {
+		color: #fff;
+	}
+
+	& > img {
+		padding-top: 100px;
+	}
 }
-.mask > img {
-	padding-top: 100px;
+
+.bg-nav {
+	background-color: rgba(255, 255, 255, 0.97);
+	border-bottom: 1px solid #eee;
 }
-.mask > h1 {
-	color: #fff;
-}
-.bg-white {
-	background-color: #fff;
-	border-bottom: 1px solid #ddd;
-}
+
 .post-list {
 	background-image: url(/assets/images/home.jpg);
 	background-size: cover, cover;
 	background-position: center;
-	text-align: center;
 	height: 300px;
 	border-bottom: 1px solid #eee;
+	font-size: 24px;
+
+	.date {
+		font-size: 14px;
+		margin-top: 4px;
+	}
 }
+
 .post-mask {
 	width: 100%;
 	height: 100%;
-	padding-top: 130px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 	background-color: rgba(255, 255, 255, 1);
 }
+
 .post-mask:hover {
 	background-color: rgba(0, 0, 0, 0.3);
 }
+
 .post-list > a {
 	text-decoration: none;
 	color: #000;
 }
+
 .post-list > a:hover {
 	text-decoration: none;
 	color: #fff;
 }
+
 .post-content img {
 	max-width: 100%;
 }
@@ -98,8 +148,9 @@
 	width: 120px;
 	height: 120px;
 }
+
 footer {
 	padding: 20px 0px 20px 0px;
-	border-top: 1px solid #ccc;
+	border-top: 1px solid #eee;
 	text-align: center;
 }

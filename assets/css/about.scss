@@ -1,27 +1,60 @@
 ---
 ---
+@font-face {
+    font-family: 'Spoqa Han Sans Neo';
+    font-weight: 700;
+    src: local('Spoqa Han Sans Bold'),
+    url('/assets/fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Bold.woff2') format('woff2'),
+    url('/assets/fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Bold.woff') format('woff'),
+    url('/assets/fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Spoqa Han Sans Neo';
+    font-weight: 400;
+    src: local('Spoqa Han Sans Regular'),
+    url('/assets/fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Regular.woff2') format('woff2'),
+    url('/assets/fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Regular.woff') format('woff'),
+    url('/assets/fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Regular.ttf') format('truetype');
+}
+
 * {
     margin: 0;
     padding: 0;
 }
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Spoqa Han Sans Neo', sans-serif;
+}
+
 a {
-    color: #000;
+    color: #868686;
     text-decoration: none;
 }
+
 .back-image {
     background-repeat: no-repeat;
     background-size: cover, cover;
     background-position: center;
 }
+
 .main-background {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     text-align: center;
     background-image: url(/assets/images/home.jpg);
+    background-attachment: fixed;
 }
+
 .main-background img {
     margin-top: 35vh;
 }
+
 .left-lay-text-logo {
     color: #fff;
     position: fixed;
@@ -31,6 +64,7 @@ a {
     -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg);
 }
+
 .right-lay-text-logo {
     color: #fff;
     position: fixed;
@@ -40,16 +74,19 @@ a {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
 }
+
 .right-top-text-nav {
     position: fixed;
     top: 20px;
     right: 50px;
     transition: all ease 0.5s 0s;
 }
+
 .right-top-text-nav a {
     color: #fff;
     text-decoration: none;
 }
+
 .left-top-image-logo {
     z-index: 9999;
     opacity: 0;
@@ -58,81 +95,102 @@ a {
     left: 25px;
     transition: all ease 0.5s 0s;
 }
+
 .left-top-image-logo img {
     width: 85px;
     height: 85px;
 }
+
 .left-bottom-social {
     z-index: 9999;
     position: fixed;
     bottom: 60px;
     left: 60px;
 }
+
 .nonstyle {
     list-style: none;
 }
+
 .inline li {
     display: inline-block;
     margin: 10px;
 }
+
 .team-info img {
     display: block;
     width: 50px;
     border-radius: 100%;
 }
+
 .team-info a {
     text-decoration: none;
 }
+
 .social-link {
     transition: all ease 0.5s 0s;
     color: #fff;
 }
+
 .container {
     margin: 0 auto;
     width: 750px;
     max-width: 100%;
-    font-family: 'Noto Sans KR', sans-serif;
 }
+
 .main-content {
-    margin-top: 200px;
+    margin-top: 240px;
 }
+
 .text-center {
     text-align: center;
 }
+
 .row-image {
     margin: 0 auto;
 }
+
 .row-image img {
     width: auto;
     height: 200px;
 }
+
 .mt-1 {
     margin-top: 10px;
 }
+
 .mt-2 {
     margin-top: 20px;
 }
+
 .mt-3 {
     margin-top: 30px;
 }
+
 .mt-4 {
     margin-top: 40px;
 }
+
 .mt-5 {
     margin-top: 50px;
 }
+
 .mb-1 {
     margin-bottom: 10px;
 }
+
 .mb-2 {
     margin-bottom: 20px;
 }
+
 .mb-3 {
     margin-bottom: 30px;
 }
+
 .mb-4 {
     margin-bottom: 40px;
 }
+
 .mb-5 {
     margin-bottom: 50px;
 }
@@ -149,5 +207,29 @@ a {
     }
     .left-bottom-social {
         position: absolute;
+    }
+}
+
+.fill-full-display {
+    width: 100%;
+    height: 100%;
+}
+
+.fill-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.image-mask-dark {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+        color: #fff;
     }
 }

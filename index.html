@@ -5,11 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Comma, Dev.</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" 
-    crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/css/about.css">
-    <link rel="stylesheet" href="https://baejino.com/baealex.css">
     <link rel="shortcut icon" href="assets/favicon.ico">
     <link rel="icon" href="/assets/logo.png">
 </head>
@@ -21,78 +18,53 @@
         절제되고 목적에 맞는 소프트웨어
     </div>
     <div class="container main-content text-center">
-        <h2 id="intro">2018.06.</h2>
+        <h2 id="intro">2018. 06.</h2>
         <h4 class="mt-2">
-            프로그래밍이 재밌어서 하는 친구들
+            절제되고 목적에 맞는 소프트웨어 
         </h4>
+    </div>
+    <div class="container main-content text-center">
+        <h2 id="members">MEMBERS.</h2>
         <ul class="nonstyle inline mt-2">
             <li class="team-info"><a href="https://github.com/Imakara38"><img src="https://avatars0.githubusercontent.com/u/46888413?s=180&v=4">김신유</a></li>
             <li class="team-info"><a href="https://github.com/baealex"><img src="https://avatars1.githubusercontent.com/u/35596687?s=180&v=4">배진오</a></li>
             <li class="team-info"><a href="https://github.com/DeCrazy"><img src="https://avatars3.githubusercontent.com/u/47843542?s=180&v=4">이산아</a></li>
         </ul>
-        <ul class="nonstyle mt-2">
-            <li><a href="/posts/콤마-규칙/">규칙</a></li>
-            <li><a href="/posts/1차-작업물-회의/">회의록</a></li>
-            <li><a href="/library/">자료실</a></li>
-        </ul>
     </div>
     <div class="container main-content text-center">
         <h2 id="logo">LOGO.</h2>
         <h4 class="mt-2">
-            우리가 생각하는 우리팀은 무엇인가?
+            우리가 생각하는 우리팀은?
         </h4>
-        <p class="mt-2">소속감을 향상시키기 위해 서로가 생각하는 팀을 CI 공모전을 통해 이야기하였다.</p>
     </div>
-    <div class="row-image mt-5 text-center">
+    <div class="row-image mt-2 text-center">
         <img src="/assets/images/1-design-ci/1.png">
         <img src="/assets/images/1-design-ci/2.png">
         <img src="/assets/images/1-design-ci/3.png">
-    </div>
-    <div class="container main-content text-center">
-        <h2 id="product" class="mb-3">PRODUCT.</h2>
-    </div>
-    <a href="https://github.com/commadev/File-Transfer-System">
-        <div class="fill-full-display fill-image" style="background-image: url(https://baealex.run.goorm.io/api/blog-together/image/uploads/2019/09/26/kQSqO1fk4z.png)">
-            <div class="image-mask-dark">
-                <h2>
-                    파일 전송 프로그램(FTP)
-                </h2>
-            </div>
-        </div>
-    </a>
-    <a href="https://github.com/commadev/CommaViewer">
-        <div class="fill-full-display fill-image" style="background-image: url(https://baealex.run.goorm.io/api/blog-together/image/uploads/2019/09/26/tBPYcQaPVn.gif)">
-            <div class="image-mask-dark">
-                <h2>
-                    Comma Viewer
-                </h2>
-            </div>
-        </div>  
-    </a>
-    <a href="https://github.com/commadev/AI-Logistics-System-Server">
-        <div class="fill-full-display fill-image" style="background-image: url(https://baealex.run.goorm.io/api/blog-together/image/uploads/2019/09/26/fm3kJ7zkoj.gif)">
-            <div class="image-mask-dark">
-                <h2>
-                    물류 자동화 시스템 알고리즘
-                </h2>
-            </div>
-        </div>
-    </a>
-    <div class="container main-content text-center mb-5">
-        <h2 id="contact">CONTACT.</h2>
-        <h4 class="mt-2">
-            <a class="contact" href="mailto:bae_alex@naver.com">baealex@outlook.kr</a>
-        </h4>
+        <p class="mt-2 mb-5">
+            서로가 생각하는 팀의 이미지를 <a href="/posts/제-1회-디자인-공모전/">CI 공모전</a>을 통해 이야기하였다.
+        </p>
     </div>
     <div class="left-top-image-logo">
         <img src="/assets/logo.png">
     </div>
     <div class="right-top-text-nav">
         <ul class="nonstyle inline">
-            <li><a href="javascript:void(0)" onclick="MoveSlide('intro');">Intro</a></li>
-            <li><a href="javascript:void(0)" onclick="MoveSlide('logo');">Logo</a></li>
-            <li><a href="javascript:void(0)" onclick="MoveSlide('product');">Product</a></li>
-            <li><a href="javascript:void(0)" onclick="MoveSlide('contact');">Contact</a></li>
+            <li>
+                <a href="javascript:void(0)" onclick="moveTo('intro');">
+                    소개
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" onclick="moveTo('members');">
+                    팀원들
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" onclick="moveTo('logo');">
+                    로고
+                </a>
+            </li>
         </ul>
     </div>
     <div class="left-lay-text-logo">

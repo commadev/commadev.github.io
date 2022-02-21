@@ -33,16 +33,6 @@ $(document).ready(function() {
             } else {
                 $('.right-top-text-nav a').css('color','#fff');
             }
-
-            if ($(document).scrollTop() + scroll_down_harf > $('#product').position().top) {
-                $('.left-lay-text-logo').css('color','#fff');
-            }
-            if ($(document).scrollTop() + winH - 150 > $('#product').position().top) {
-                $('.social-link').css('color', '#fff');
-            }
-            if ($(document).scrollTop() + winH - 150 > $('#product').position().top + winH * 3) {
-                $('.social-link').css('color', '#000');
-            }
         }
         else {
             if ($(document).scrollTop() > scroll_down_full) {
@@ -53,6 +43,7 @@ $(document).ready(function() {
         }
     });
 });
-function MoveSlide(target) {
-    $('html, body').animate({ scrollTop: $('#' + target).offset().top - 80 }, 500);
+
+function moveTo(id) {
+    $('html, body').animate({ scrollTop: $('#' + id).offset().top - 80 }, 500);
 }
